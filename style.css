@@ -22,7 +22,9 @@ header h1 {
 }
 nav {
     text-align: center;
-
+    display: inline-block;
+    width: 100%;
+    height: 70%;
     background-color: rgb(34, 222, 255);
 }
 nav ul {
@@ -53,16 +55,15 @@ main {
     background-color: #bdf8f3;
     font-size: medium;
 }
-li {
+/* li {
     width: 50%;
     display:
-}
+} */
 nav ul {
   list-style: none;
   padding: 0;
   text-align: center;
 }
-
 nav ul li {
   display: inline;
   margin: 0 15px;
@@ -76,4 +77,30 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline;
   color: #0056b3;
+}
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00d5ff;
+    color: #fff;
+    padding: 5px;
+    z-index: 1;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+nav img {
+    width: 10%;
+}
+.Creator {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 20px
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
