@@ -2,45 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Favorite Character Page</title>
-  </main>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a href="#about" class="skip-link">Skip to Main Content</a>
-  <header>
+  <header class="site-header">
     <h1>I introduce you my wife! Shirakami Fubuki!</h1>
-  </header>
-    <nav>
+    <nav aria-label="Primary" class="primary-nav">
       <ul>
-        <li><a href="https://virtualyoutuber.fandom.com/wiki/Shirakami_Fubuki" target="_blank">Learn more on Fandom</a></li>
-        <li><a href="https://www.youtube.com/@ShirakamiFubuki" target="_blank">Her YouTube channel</a></li>
-
+        <li><a href="https://virtualyoutuber.fandom.com/wiki/Shirakami_Fubuki" target="_blank" rel="noopener noreferrer">Learn more on Fandom</a></li>
+        <li><a href="https://www.youtube.com/@ShirakamiFubuki" target="_blank" rel="noopener noreferrer">Her YouTube channel</a></li>
+        <li><a href="#gallery">Jump to Gallery</a></li>
       </ul>
     </nav>
+  </header>
   <main id="about">
-    <h2>About This Page</h2>
-    <p>I made this website to show how lovely this 2D character is.</p>
-    <section class="flex">
-    <h2>Reasons Why I Love This Character: </h2>
-    <ol>
-      <li>She has cute fox ears.</li>
-      <li>She has beautiful white hair.</li>
-      <li>She is funny and always makes people smile.</li>
-    </ol>
+    <section class="intro">
+      <h2>About This Page</h2>
+      <p>I made this website to show how lovely this 2D character is.</p>
     </section>
-    <section id="gallery" class="grid">
-      <h2>Images of Her Beauty</h2>
-      <img src="fubuki2.jpg" alt="">
-      <img src="fubuki1.jpg" alt="">
-      <img src="fubuki3.jpg" alt="">
-      <h4>Credit to many authors for these images but I cant find their link</p>
+    <section class="reasons flex" aria-labelledby="reasons-title">
+      <h2 id="reasons-title">Reasons Why I Love This Character</h2>
+      <ol>
+        <li>She has cute fox ears.</li>
+        <li>She has beautiful white hair.</li>
+        <li>She is funny and always makes people smile.</li>
+      </ol>
+    </section>
+    <section id="gallery" class="gallery" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Images of Her Beauty</h2>
+      <figure>
+        <img src="fubuki2.jpg" alt="Shirakami Fubuki smiling with a bright background">
+        <figcaption>Fubuki showing her cheerful smile.</figcaption>
+      </figure>
+      <figure>
+        <img src="fubuki1.jpg" alt="Shirakami Fubuki posing with fox ears visible">
+        <figcaption>Her signature fox ears on display.</figcaption>
+      </figure>
+      <figure>
+        <img src="fubuki3.jpg" alt="Shirakami Fubuki with sparkling effects around her">
+        <figcaption>A magical moment captured in time.</figcaption>
+      </figure>
+      <p class="credits">Credit to the talented artists behind these images.</p>
     </section>
   </main>
   <footer>
-    <section class="Creator">
-    <p>Created by Me – Kxisla</p>
-    <p>Visit this cute fox!! <a href="https://hololive.hololivepro.com/en/talents/shirakami-fubuki/" target="_blank">Official Profile</a></p>
+    <section class="creator">
+      <p>Created by Me – Kxisla</p>
+      <p>Visit this cute fox!! <a href="https://hololive.hololivepro.com/en/talents/shirakami-fubuki/" target="_blank" rel="noopener noreferrer">Official Profile</a></p>
     </section>
   </footer>
 </body>
